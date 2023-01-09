@@ -8,3 +8,5 @@ session: S00
 * Please see the **First Steps** in LearningSuite > Content.
 * Fill out the *preferred lab times* survey (link in First Steps)
 * Get the textbook, *Computer Systems: A Programmer's Perspective*
+* NCAE is recruiting team members.
+* WICYS (Women in Cybersecurity) needs members (both women and friends). 
