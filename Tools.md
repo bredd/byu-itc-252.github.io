@@ -7,9 +7,8 @@ To get started, you need to make sure the tools are installed in your Linux inst
 ```
 sudo apt update
 sudo apt install gcc build-essential
-sudo apt install
-sudo apt-get install gcc-multilib
-sudo apt-get install gdb
+sudo apt install gcc-multilib
+sudo apt install gdb
 ```
 
 *gcc-multilib* lets you compile for 32-bit as well as 64-bit.
