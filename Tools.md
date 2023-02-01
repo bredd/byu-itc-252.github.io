@@ -51,6 +51,7 @@ Dumps the contents of object and executable files including disassembling machin
 
 ### Commonly-used options
 * `-d`<br/>Disassemble all .text (code) sections.
+* `-M intel`<br/>Use Intel syntax shen disassembling code.
 * `-s`<br/>Binary dump all sections.
 
 ### Example
