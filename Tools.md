@@ -18,8 +18,8 @@ sudo apt install gdb
 Compiles code in C, C++, and a variety of other languages and links code from multiple modules and libraries into an executable file.
 
 ### Commonly-used options
-* `-m32` Compile and link for 32-bit mode
-* `-O0` Turn off all optimizations making assembly code easier to read and debug. (That's capital "O" followed by zero.) Sometimes `-O1` with minimal optimization may be valuable. 
+* `-m32`<br/>Compile and link for 32-bit mode
+* `-O0`<br/>Turn off all optimizations making assembly code easier to read and debug. (That's capital "O" followed by zero.) Sometimes `-O1` with minimal optimization may be valuable. 
 * `-S`<br/>Compile to assembly language - to see how things are done.
 * `-S -masm=intel`<br/>Compile to intel-syntax assembly language. 
 * `-S -masm=att`<br/>Compile to AT&T-syntax assembly language. (Not really necessary because that's the default.)
