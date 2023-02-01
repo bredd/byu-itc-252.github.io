@@ -3,6 +3,18 @@ title: Linux Computer Architecture Tools
 ---
 As you learn about computer architecture and work through the labs, these tools will be valuable.
 
+To get started, you need to make sure the tools are installed in your Linux installation (whether a physical machine, a VM, or Windows Subsystem for Linux). From your Linux command line use the following commands:
+```
+sudo apt update
+sudo apt install gcc build-essential
+sudo apt install
+sudo apt-get install gcc-multilib
+sudo apt-get install gdb
+```
+
+*gcc-multilib* lets you compile for 32-bit as well as 64-bit.
+*gdb* installs the debugger.
+
 ## **gcc** Compiler/Linker
 Compiles code in C, C++, and a variety of other languages and links code from multiple modules and libraries into an executable file.
 
