@@ -20,12 +20,12 @@ Compiles code in C, C++, and a variety of other languages and links code from mu
 ### Commonly-used options
 * `-m32` Compile and link for 32-bit mode
 * `-O0` Turn off all optimizations making assembly code easier to read and debug. (That's capital "O" followed by zero.) Sometimes `-O1` with minimal optimization may be valuable. 
-* `-S` Compile to assembly language - to see how things are done.
-* `-S -masm=intel` Compile to intel-syntax assembly language. 
-* `-S -masm=att` Compile to AT&T-syntax assembly language. (Not really necessary because that's the default.)
-* `-c` Compile to an object file to be linked or dumped.
-* `-fno-asynchronous-unwind-tables -fno-pie` Remove extra stuff from the generated code so you can see just what the compiler is doing. For details on what these mean see [this article](https://stackoverflow.com/questions/38552116/how-to-remove-noise-from-gcc-clang-assembly-output) and [this article](https://stackoverflow.com/questions/50105581/how-do-i-get-rid-of-call-x86-get-pc-thunk-ax) from StackOverflow.
-* `-ggdb` Include debugging symbols 
+* `-S`<br/>Compile to assembly language - to see how things are done.
+* `-S -masm=intel`<br/>Compile to intel-syntax assembly language. 
+* `-S -masm=att`<br/>Compile to AT&T-syntax assembly language. (Not really necessary because that's the default.)
+* `-c`<br/>Compile to an object file to be linked or dumped.
+* `-fno-asynchronous-unwind-tables -fno-pie`<br/>Remove extra stuff from the generated code so you can see just what the compiler is doing. For details on what these mean see [this article](https://stackoverflow.com/questions/38552116/how-to-remove-noise-from-gcc-clang-assembly-output) and [this article](https://stackoverflow.com/questions/50105581/how-do-i-get-rid-of-call-x86-get-pc-thunk-ax) from StackOverflow.
+* `-ggdb`<br/>Include debugging symbols 
 
 ### Example
 
@@ -50,8 +50,8 @@ Try the same thing without the -m32 option to see how 64-bit code differs from t
 Dumps the contents of object and executable files including disassembling machine code.
 
 ### Commonly-used options
-* `-d` Disassemble all .text (code) sections.
-* `-s` Binary dump all sections.
+* `-d`<br/>Disassemble all .text (code) sections.
+* `-s`<br/>Binary dump all sections.
 
 ### Example
 
@@ -79,17 +79,17 @@ Start gdb by specifying the program to be debugged on the command line.
 Once it's running you type commands to debug the code.
 
 ### Common commands
-* `set disassembly-flavor intel` Disassemble in Intel syntax
-* `set disassembly-flavor att` Disassemble in AT&T syntax (this is the default)
-* `disassemble <name>` Disassemble the named function
-* `list` List the source code in the vicinity of the current location.
-* `break <name>` Set a breakpoint on the named function
-* `break *<address>` Set a breakpoint at the specified address
-* `run` Start the program from the beginning
-* `continue` Continue running the program after reaching a breakpoint
-* `step` Go to the next instruction, diving into functions when called
-* `next` Go to the next instruction, skipping over function calls
-* `exit` Exit the debugger
+* `set disassembly-flavor intel`<br/>Disassemble in Intel syntax
+* `set disassembly-flavor att`<br/>Disassemble in AT&T syntax (this is the default)
+* `disassemble <name>`<br/>Disassemble the named function
+* `list`<br/>List the source code in the vicinity of the current location.
+* `break <name>`<br/>Set a breakpoint on the named function
+* `break *<address>`<br/>Set a breakpoint at the specified address
+* `run`<br/>Start the program from the beginning
+* `continue`<br/>Continue running the program after reaching a breakpoint
+* `step`<br/>Go to the next instruction, diving into functions when called
+* `next`<br/>Go to the next instruction, skipping over function calls
+* `exit`<br/>Exit the debugger
 
 ### Example
 Create a file called `add.c` with the following contents:
