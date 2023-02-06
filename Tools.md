@@ -19,12 +19,15 @@ Compiles code in C, C++, and a variety of other languages and links code from mu
 
 ### Commonly-used options
 * `-m32`<br/>Compile and link for 32-bit mode
-* `-O0`<br/>Turn off all optimizations making assembly code easier to read and debug. (That's capital "O" followed by zero.) Sometimes `-O1` with minimal optimization may be valuable. 
-* `-S`<br/>Compile to assembly language - to see how things are done.
+* `-O0`<br/>Turn off all optimizations. Usually this makes assembly code easier to read and debug. (That's capital "O" followed by zero.)
+* `-O1` `-O2` `-O3`<br/>Add varying degrees of optimization. These certainly make the code more efficient and somethimes make it easier to understand.
+* `-Os`<br/>Optimize for size (instead of performance). This may also make the generated code more intelligible.
+* `-S`<br/>Compile to assembly language - to see how things are done. (That's a capital 'S'.)
 * `-S -masm=intel`<br/>Compile to intel-syntax assembly language. 
 * `-S -masm=att`<br/>Compile to AT&T-syntax assembly language. (Not really necessary because that's the default.)
 * `-c`<br/>Compile to an object file to be linked or dumped.
-* `-fno-asynchronous-unwind-tables -fno-pie`<br/>Remove extra stuff from the generated code so you can see just what the compiler is doing. For details on what these mean see [this article](https://stackoverflow.com/questions/38552116/how-to-remove-noise-from-gcc-clang-assembly-output) and [this article](https://stackoverflow.com/questions/50105581/how-do-i-get-rid-of-call-x86-get-pc-thunk-ax) from StackOverflow.
+* `-fno-asynchronous-unwind-tables -fno-pie -mpreferred-stack-boundary=2`<br/>Remove extra stuff from the generated code so you can see just what the compiler is doing. For details on what these mean see [this article](https://stackoverflow.com/questions/38552116/how-to-remove-noise-from-gcc-clang-assembly-output) and [this article](https://stackoverflow.com/questions/50105581/how-do-i-get-rid-of-call-x86-get-pc-thunk-ax) from StackOverflow.
+* `-fverbose-asm`
 * `-ggdb`<br/>Include debugging symbols 
 
 ### Example
@@ -39,7 +42,7 @@ int add(int a, int b)
 
 Compile it to assembly using the following command:
 ```
-gcc -m32 -O0 -S -fno-asynchronous-unwind-tables -fno-pie -masm=att add.c
+gcc -m32 -O0 -S -fno-asynchronous-unwind-tables -fno-pie  -mpreferred-stack-boundary=2 add.c
 ```
 
 This will produce a file called `add.s` with the assembly language version of the code.
@@ -51,7 +54,7 @@ Dumps the contents of object and executable files including disassembling machin
 
 ### Commonly-used options
 * `-d`<br/>Disassemble all .text (code) sections.
-* `-M intel`<br/>Use Intel syntax shen disassembling code.
+* `-M intel`<br/>Use Intel syntax when disassembling code.
 * `-s`<br/>Binary dump all sections.
 
 ### Example
