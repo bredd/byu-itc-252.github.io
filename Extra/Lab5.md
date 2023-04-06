@@ -6,7 +6,7 @@ title: Virtual Memory
 
 ## Introduction
 
-Please read all instructions before beginning the lab. In particular, review the **Writeup and Submission** section so you know what to submit upon completion of the lab.
+Please read all instructions before beginning the lab. In particular, review the [Writeup and Submission](#writeup-and-submission) section so you know what to submit upon completion of the lab.
 
 For the first part of this lab you will use the ParaCache simulator (same as Lab 4) to simulate virtual memory address translation. You will record your results and submit a writeup that includes screenshots.
 
@@ -27,9 +27,9 @@ Generate a series of 31 instructions that will miss 11 times, hit in the TLB 10 
 
 ## Part 2: Memory Mountain
 
-This part requires Linux or the Windows Subsystem for Linux. If you have a Mac, do the tests on one of the lab computers and then complete the graphing and writeup on whatever computer you prefer.
+This part requires Linux or the Windows Subsystem for Linux. Use whatever system you used for the Binary Bomb and Buffer Overflow Labs.
 
-1. In your textbook, the memory mountain test is shown in section 6.6.1 (page 641). This test shows the different levels of cache, and virtual memory
+1. In your textbook, the memory mountain test is described in section 6.6.1 (page 639). This test shows the different levels of cache, and virtual memory
 2. First, get information on the type of caches your system has.
     * On **Linux**, install **cpuid** with the command `sudo apt install cpuid`.
     * Run **cpuid** and save the output to a text file. E.g. `cpuid > cpuid.txt`
@@ -48,7 +48,7 @@ This part requires Linux or the Windows Subsystem for Linux. If you have a Mac, 
     * Select **Insert** > **Recommended Charts**
     * Select **All Charts** > **Surface** > **3-D Surface**
     * The chart should appear. In the **Chart Design** tab experiment with **Switch Row/Column**. Depending on your data, the different views will reveal different information.
-    * Once you are satisfied with the chart, save it as an image by right-clicking in an area within the box but outside the chart and selecting **Save as Picture**.
+    * Once you are satisfied with the chart, save it as an image by right-clicking in just inside the chart border but outside the graphic, legend, or title, and then selecting **Save as Picture**.
 7. Mention 2-5 things you observe in your computer's memory mountain. Reading section 6.6.1 from the textbook will help with this part, especially Figure 6.41.
 
 Here is the example from the textbook authors with regions labeled: [MemoryMountain-CSAPP](MemoryMountain-CSAPP.png){:target="_blank"}.
