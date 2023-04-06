@@ -1,5 +1,5 @@
 ---
-title: Virtual Memory
+title: Lab 5: Memory
 ---
 
 **Objective:**  Develop a sense of how virtual memory and translation caching work.
