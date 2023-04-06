@@ -39,7 +39,7 @@ This part requires a Windows or Linux computer. If you have a Mac, do the tests 
     * Or, if you prefer, build from [the source files](MemoryMountainSource.zip).
 4. Run the MemoryMountain from a Linux command line and pipe the results into a .csv file using the ">" command. e.g., `./MemoryMountain > data.csv`
     * Be patient. On a fast processor it takes about a minute. It could take longer on a slower machine
-5. The result is a table of numbers. Open the .csv file you created using Microsoft Excel, OpenOffice Calc, or another package capable of making 3D charts. You can also use [Google Sheets](https://docs.google.com/spreadsheets) but it's only capable of 2D charts.
+5. The result is a table of numbers. Open the .csv file you created using Microsoft Excel, OpenOffice Calc, or another package capable of making 3D charts. You can also use [Google Sheets](https://docs.google.com/spreadsheets){:target="_blank"} but it's only capable of 2D charts.
 6. Create a 3D graph of the data (or 2D if necessary). Include that graph in your writeup. Here are instructions for how to do it in Excel.
     * Open the .csv file in excel.
     * Select the cell in the upper-left of the table. (Typically, it is already selected).
@@ -50,7 +50,11 @@ This part requires a Windows or Linux computer. If you have a Mac, do the tests 
 7. Mention 2-5 things you observe in your computer's memory mountaion. Reading section 6.6.1 from the textbook will help with this part, especially Figure 6.41.
 
 Here is the example from the textbook authors with regions labeled: [MemoryMountain-CSAPP](MemoryMountain-CSAPP.png){:target="_blank"}.
-And here is an example with data from my computer: [MemoryMountain-REDD](MemoryMountain-REDD.png){:target="_blank"}.
+And here is an example with data from my computer: [MemoryMountain-REDD](MemoryMountain-Redd.png){:target="_blank"}.
+
+**WSL2 Hints**
+
+If you're running Linux under WSL2 (Windows Subsystem for Windows 2), you are likely to generate your data in Linux but generate your graphs in Windows. So, you need move files between your Windows and Linux subsystems. The Linux file system accessed from the Windows File explorer at `\\wsl$\`. In that file system you'll find your home directory at `\\wsl$\Ubuntu\home\username` or similar. Likewise, you can access your Windows file sytem from LSW2 at the following path: `/mnt/`. So, for example, your Windows home directory would be at `/mnt/c/users/username`.
 
 ## Writeup and Submission
 
