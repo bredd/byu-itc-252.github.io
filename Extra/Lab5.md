@@ -27,7 +27,7 @@ Generate a series of 31 instructions that will miss 11 times, hit in the TLB 10 
 
 ## Part 2: Memory Mountain
 
-This part requires a Windows or Linux computer. If you have a Mac, do the tests on one of the lab computers and then complete the graphing and writeup on whatever computer you prefer.
+This part requires Linux or the Windows Subsystem for Linux. If you have a Mac, do the tests on one of the lab computers and then complete the graphing and writeup on whatever computer you prefer.
 
 1. In your textbook, the memory mountain test is shown in section 6.6.1 (page 641). This test shows the different levels of cache, and virtual memory
 2. First, get information on the type of caches your system has.
@@ -50,11 +50,11 @@ This part requires a Windows or Linux computer. If you have a Mac, do the tests 
 7. Mention 2-5 things you observe in your computer's memory mountaion. Reading section 6.6.1 from the textbook will help with this part, especially Figure 6.41.
 
 Here is the example from the textbook authors with regions labeled: [MemoryMountain-CSAPP](MemoryMountain-CSAPP.png){:target="_blank"}.
-And here is an example with data from my computer: [MemoryMountain-REDD](MemoryMountain-Redd.png){:target="_blank"}.
+And here is an example with data from my computer: [MemoryMountain-Redd](MemoryMountain-Redd.png){:target="_blank"}.
 
 **WSL2 Hints**
 
-If you're running Linux under WSL2 (Windows Subsystem for Windows 2), you are likely to generate your data in Linux but generate your graphs in Windows. So, you need move files between your Windows and Linux subsystems. The Linux file system accessed from the Windows File explorer at `\\wsl$\`. In that file system you'll find your home directory at `\\wsl$\Ubuntu\home\username` or similar. Likewise, you can access your Windows file sytem from LSW2 at the following path: `/mnt/`. So, for example, your Windows home directory would be at `/mnt/c/users/username`.
+If you're running Linux under WSL2 (Windows Subsystem for Windows 2), you are likely to generate your data in Linux but generate your graphs in Windows. So, you need move files between your Windows and Linux subsystems. The Linux file system may be accessed from the Windows File explorer at `\\wsl$\`. In that file system you'll find your home directory at `\\wsl$\Ubuntu\home\username` or similar. Likewise, you can access your Windows file sytem from LSW2 at the following path: `/mnt/`. So, for example, your Windows home directory would be at `/mnt/c/users/username`.
 
 ## Writeup and Submission
 
