@@ -4,6 +4,8 @@
 
 ## Introduction
 
+Please read all instructions before beginning the lab. In particular, review the **Writeup and Submission** section so you know what to submit upon completion of the lab.
+
 For the first part of this lab you will use the ParaCache simulator (same as Lab 4) to simulate virtual memory address translation. You will record your results and submit a writeup that includes screenshots.
 
 For the second part of this lab you will use the memory mountain test and graph the results to discover the characteristics of your computer's memory system. The test comes from the *Computer Systems, A Programmer's Perspective* textbook section 6.6.1.
@@ -33,7 +35,7 @@ This part requires a Windows or Linux computer. If you have a Mac, do the tests 
 4. Run the MemoryMountain executable.
     a. For Linux, download the executable [from here](LinuxMemoryMountain.zip).
     b. Or, if you prefer, build from [the source files](MemoryMountainSource.zip).
-4. Run the MemoryMountain from the command line and pipe the results into a .csv file using the ">" command. e.g., `MemoryMountain.exe > data.csv`
+4. Run the MemoryMountain from a Linux command line and pipe the results into a .csv file using the ">" command. e.g., `./MemoryMountain > data.csv`
     * Be patient. On a fast processor it takes about a minute. It could take longer on a slower machine
 5. The result is a table of numbers. Open the .csv file you created using Microsoft Excel, OpenOffice Calc, or another package capable of making 3D charts. You can also use [Google Sheets](https://docs.google.com/spreadsheets) but it's only capable of 2D charts.
 6. Create a 3D graph of the data (or 2D if necessary). Include that graph in your writeup. Here are instructions for how to do it in Excel.
