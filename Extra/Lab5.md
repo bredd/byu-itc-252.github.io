@@ -31,26 +31,26 @@ This part requires a Windows or Linux computer. If you have a Mac, do the tests 
 
 1. In your textbook, the memory mountain test is shown in section 6.6.1 (page 641). This test shows the different levels of cache, and virtual memory
 2. First, get information on the type of caches your system has.
-    1. On **Linux**, install **cpuid** with the command `sudo apt install cpuid`.
-    2. Run **cpuid** and save the output to a text file. E.g. `cpuid > cpuid.txt`
-    3. Review the information under the "deterministic cache parameters" heading. Include in your writeup these specifications: "cache type", "cache level", "fully associative cache", "system coherency line size" (what we call block size), "ways of associativity", and "number of sets"
+    * On **Linux**, install **cpuid** with the command `sudo apt install cpuid`.
+    * Run **cpuid** and save the output to a text file. E.g. `cpuid > cpuid.txt`
+    * Review the information under the "deterministic cache parameters" heading. Include in your writeup these specifications: "cache type", "cache level", "fully associative cache", "system coherency line size" (what we call block size), "ways of associativity", and "number of sets"
 3. Run the MemoryMountain executable.
-    1. For Linux, download the executable [from here](LinuxMemoryMountain.zip).
-    2. Or, if you prefer, build from [the source files](MemoryMountainSource.zip).
+    * For Linux, download the executable [from here](LinuxMemoryMountain.zip).
+    * Or, if you prefer, build from [the source files](MemoryMountainSource.zip).
 4. Run the MemoryMountain from a Linux command line and pipe the results into a .csv file using the ">" command. e.g., `./MemoryMountain > data.csv`
     * Be patient. On a fast processor it takes about a minute. It could take longer on a slower machine
 5. The result is a table of numbers. Open the .csv file you created using Microsoft Excel, OpenOffice Calc, or another package capable of making 3D charts. You can also use [Google Sheets](https://docs.google.com/spreadsheets) but it's only capable of 2D charts.
 6. Create a 3D graph of the data (or 2D if necessary). Include that graph in your writeup. Here are instructions for how to do it in Excel.
-    1. Open the .csv file in excel.
-    2. Select the cell in the upper-left of the table. (Typically, it is already selected).
-    3. Select **Insert** > **Recommended Charts**
-    4. Select **All Charts** > **Surface** > **3-D Surface**
-    5. The chart should appear. In the **Chart Design** tab experiment with **Switch Row/Column**. Depending on your data, the different views will reveal different information.
-    6. Once you are satisfied with the chart, save it as an image by righ-clicking in an area within the box but outside the chart and selecting **Save as Picture**.
+    * Open the .csv file in excel.
+    * Select the cell in the upper-left of the table. (Typically, it is already selected).
+    * Select **Insert** > **Recommended Charts**
+    * Select **All Charts** > **Surface** > **3-D Surface**
+    * The chart should appear. In the **Chart Design** tab experiment with **Switch Row/Column**. Depending on your data, the different views will reveal different information.
+    * Once you are satisfied with the chart, save it as an image by righ-clicking in an area within the box but outside the chart and selecting **Save as Picture**.
 7. Mention 2-5 things you observe in your computer's memory mountaion. Reading section 6.6.1 from the textbook will help with this part, especially Figure 6.41.
 
-Here is the example from the textbook authors with regions labeled: [MemoryMountain-CSAPP](MemoryMountain-CSAPP.png).
-And here is an example with data from my computer: [MemoryMountain-REDD](MemoryMountain-REDD.png).
+Here is the example from the textbook authors with regions labeled: [MemoryMountain-CSAPP](MemoryMountain-CSAPP.png){:target="_blank"}.
+And here is an example with data from my computer: [MemoryMountain-REDD](MemoryMountain-REDD.png){:target="_blank"}.
 
 ## Writeup and Submission
 
@@ -58,16 +58,16 @@ Write up your results using your authoring tool of choice (word processor, MarkD
 
 Please follow this outline:
 
-    * Your Name and Date
-    * Title
-    * Virtual Memory
-        * Screenshot of 10 random instructions/addresses. (Virtual Memory Step 3)
-        Description of the process illustrated by the simulator. (Virtual Memory step 4)
-        * Sequence of 32 instructions/addresses that produced the expected pattern. (Virtual Memory Step 5)
-        * Why the sequence worked. (Virtual Memory Step 6)
-        * How the TLB improves performance. (Virtual Memory Step 7)
-    * Memory Mountain
-        * Your memory mountain 3-D graph.
-        * 2-5 observations regarding your memory mountain.
+* Your Name and Date
+* Title
+* Virtual Memory
+    * Screenshot of 10 random instructions/addresses. (Virtual Memory Step 3)
+    Description of the process illustrated by the simulator. (Virtual Memory step 4)
+    * Sequence of 32 instructions/addresses that produced the expected pattern. (Virtual Memory Step 5)
+    * Why the sequence worked. (Virtual Memory Step 6)
+    * How the TLB improves performance. (Virtual Memory Step 7)
+* Memory Mountain
+    * Your memory mountain 3-D graph.
+    * 2-5 observations regarding your memory mountain.
 
 Submit the result in .pdf format on LearningSuite.
