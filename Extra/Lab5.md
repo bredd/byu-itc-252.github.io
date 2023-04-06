@@ -35,9 +35,11 @@ This part requires Linux or the Windows Subsystem for Linux. If you have a Mac, 
     * Run **cpuid** and save the output to a text file. E.g. `cpuid > cpuid.txt`
     * Review the information under the "deterministic cache parameters" heading. Include in your writeup these specifications: "cache type", "cache level", "fully associative cache", "system coherency line size" (what we call block size), "ways of associativity", and "number of sets"
 3. Run the MemoryMountain executable.
-    * For Linux, download the executable [from here](LinuxMemoryMountain.zip).
+    * For Linux, download the executable [from here](LinuxMemoryMountain.tar).
     * Or, if you prefer, build from [the source files](MemoryMountainSource.zip).
-4. Run the MemoryMountain from a Linux command line and pipe the results into a .csv file using the ">" command. e.g., `./MemoryMountain > data.csv`
+    * Note 1: Extract the executable from the .tar with the Linux command<br/>`tar -xf LinuxMemoryMountain.tar`
+    * Note 2: Once the executable is extracted, you may have to set it as executable with the command<br/>`chmod +x MemoryMountain` 
+4. Run the MemoryMountain from a Linux command line and pipe the results into a .csv file using the ">" command.<br/>e.g., `./MemoryMountain > data.csv`
     * Be patient. On a fast processor it takes about a minute. It could take longer on a slower machine
 5. The result is a table of numbers. Open the .csv file you created using Microsoft Excel, OpenOffice Calc, or another package capable of making 3D charts. You can also use [Google Sheets](https://docs.google.com/spreadsheets){:target="_blank"} but it's only capable of 2D charts.
 6. Create a 3D graph of the data (or 2D if necessary). Include that graph in your writeup. Here are instructions for how to do it in Excel.
