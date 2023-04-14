@@ -33,7 +33,7 @@ This part requires Linux or the Windows Subsystem for Linux. Use whatever system
 2. First, get information on the type of caches your system has.
     * On **Linux**, install **cpuid** with the command `sudo apt install cpuid`.
     * Run **cpuid** and save the output to a text file. E.g. `cpuid > cpuid.txt`
-    * Review the information under the "deterministic cache parameters" heading. Include in your writeup these specifications: "cache type", "cache level", "fully associative cache", "system coherency line size" (what we call block size), "ways of associativity", and "number of sets"
+    * Review the information under the "deterministic cache parameters" heading if present. Include in your writeup these specifications: "cache type", "cache level", "fully associative cache", "system coherency line size" (what we call block size), "ways of associativity", and "number of sets"<br/>Some systems will not have a "deterministic cache parameters" section or the section may be blank. Regardless, please report any cache information that's report for your processor or write, "No cache information given" if you cannot find anything useful.
 3. Run the MemoryMountain executable.
     * For Linux, download the executable [from here](LinuxMemoryMountain.tar).
     * Or, if you prefer, build from [the source files](MemoryMountainSource.zip).
@@ -54,6 +54,8 @@ This part requires Linux or the Windows Subsystem for Linux. Use whatever system
 Here is the example from the textbook authors with regions labeled: [MemoryMountain-CSAPP](MemoryMountain-CSAPP.png){:target="_blank"}.
 And here is an example with data from my computer: [MemoryMountain-Redd](MemoryMountain-Redd.png){:target="_blank"}.
 
+Your memory mountain may be quite different from the examples. It may be influenced by the architecture if you're running on a virtual machine, on an emulator or in the cloud. Some people get more of a "memory plain" than a memory mountain. Regardless, just report on what you find. You may find it interesting to compare your results with your classmates. 
+
 **WSL2 Hints**
 
 If you're running Linux under WSL2 (Windows Subsystem for Windows 2), you are likely to generate your data in Linux but generate your graphs in Windows. So, you need move files between your Windows and Linux subsystems. The Linux file system may be accessed from the Windows File explorer at `\\wsl$\`. In that file system you'll find your home directory at `\\wsl$\Ubuntu\home\username` or similar. Likewise, you can access your Windows file system from LSW2 at the following path: `/mnt/`. So, for example, your Windows home directory would be at `/mnt/c/users/username`.
@@ -73,6 +75,7 @@ Please follow this outline:
     * Why the sequence worked. (Virtual Memory Step 6)
     * How the TLB improves performance. (Virtual Memory Step 7)
 * Memory Mountain
+    * Cache information from `cpuid`.
     * Your memory mountain 3-D graph.
     * 2-5 observations regarding your memory mountain.
 
